@@ -1,0 +1,16 @@
+<div class='box'>
+    <header>
+        <section>
+          <label for="inp">ToDoList</label>
+    <input type="text" [(ngModel)]="data" placeholder="内容不得为空" (keyup)="keyData($event)"> 
+    </section>
+    </header>
+    <h2 id="tipp">正在进行</h2><span id="spanone1"></span>
+  <ul>
+    <li *ngFor="let item of todata;let dex=index;" id='inpone'>
+      <input type="checkbox" id="inp"  class='inp' (change)="fn(dex)">{{item}}------<button (click)="dell(dex)">删除</button>
+    </li>
+  </ul>
+</div>
+
+<!-- {{dataArr.length}} -->

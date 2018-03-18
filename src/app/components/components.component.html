@@ -1,0 +1,11 @@
+<div id='uu'>
+<!-- <p>  
+  {{title}}
+</p> -->
+<ul *ngFor="let i of arrData;let idx=index">
+  <li (click)="fn(i)">
+    {{i}}
+  </li>
+</ul>
+<!-- <ng-content select=".box" ></ng-content> -->
+</div>

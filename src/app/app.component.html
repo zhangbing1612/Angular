@@ -1,0 +1,123 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div style="text-align:center" class="box">
+  <!--  插值表达式  -->
+  <!-- <h1>
+    {{ 1+title+2 }}!
+  </h1>
+  <img src="{{imgUrl}}" alt="">
+  <div *ngFor="let item of arr">{{item}}</div> -->
+  <!-- 属性绑定 -->
+  <!-- <p [id]='id' [innerHTML]="title"></p> -->
+
+<!-- 循环 -->
+<!-- <ul>
+  <li *ngFor="let item of arr;let i=index">
+    {{item}}的索引是{{i}}
+  </li>
+</ul> -->
+
+<!-- 条件判断 事件绑定 -->
+<!-- <ul *ngIf="true">
+  <li *ngFor="let item of arr;let i=index" (click)="fn()">
+    {{item}}的索引是{{i}}
+  </li>
+</ul> -->
+<!-- <div>
+  <input type="text" [value]="str" (input)="str=$event.target.value">
+  <h3>{{str}}</h3>
+  <input type="text" [(ngModel)]="str">
+</div> -->
+<!-- ngSwitch指令 -->
+
+<!-- <input type="radio" (change)="changeFruit('苹果')" value="苹果" name="fruit">苹果
+<input type="radio" (change)="changeFruit('香蕉')" value="香蕉" name="fruit">香蕉
+<input type="radio" (change)="changeFruit('橙子')" value="橙子" name="fruit">橙子
+<div [ngSwitch]="fruit" >
+  <div *ngSwitchCase="'苹果'">
+    这是一个苹果
+  </div>
+  <div *ngSwitchCase="'香蕉'">
+    这是一个香蕉
+  </div>
+  <div *ngSwitchCase="'橙子'">
+    这是一个橙子
+  </div>
+</div> -->
+
+<!-- 双向数据绑定  -->
+<!-- <input type="text" [(ngModel)]="txt">
+{{txt}} -->
+
+<!-- 实现todolist功能 -->
+<!-- <br>
+<input type="text" [(ngModel)]="content" (keyup)="keyData($event)">
+<button (click)="addData()">添加数据</button>
+<h3>正在进行</h3>
+<ul>
+	<li *ngFor="let item of tolist;let idx = index;">
+		<input type="checkbox" (change)="change(idx)">{{item}} ------ <button (click)="delData(idx)">删除</button>
+	</li>
+</ul> 
+<h3>已经完成</h3>
+<ul>
+	<li *ngFor="let item of comlist;let idx = index;">
+		<input type="checkbox" checked (change)="change2(idx)">{{item}} ------ <button (click)="delData2(idx)">删除</button>
+	</li>
+</ul>
+</div>  -->
+
+<!-- 组件 -->
+<!-- <app-todolist></app-todolist> -->
+
+<!-- 组件交互 -->
+<!-- 父组件到子组件 -->
+<!-- <app-goodslist [list]="arr1"></app-goodslist>
+<app-goodslist [list]="goodslist"></app-goodslist> -->
+<!-- 父组件到子组件 -->
+<!-- <div class="box">
+  <h2>你同意五一放七天假吗</h2>
+  <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+  <app-voter *ngFor="let voter of voters" [name]="voter" (onVoted)="onVoted($event)">
+  </app-voter>
+</div>
+<br> -->
+<!-- <div> -->
+  
+  <!-- <ul>
+    <li *ngFor="let item of dataArr;let dex=index;" id='inpone'>
+      <input type="checkbox" (change)='chan(dex)' >{{item}}------<button (click)="dell(dex)">删除</button>
+    </li>
+    
+  </ul> -->
+  
+  <!-- <ul>
+    <li *ngFor="let item of dataArr2;let dex=index;" id='inptwo'>
+      <input type="checkbox"  checked  (change)='chan2(dex)' >{{item}}-------<button (click)="dell2(dex)">删除</button>
+    </li>
+  </ul> -->
+  
+  
+
+<!-- </div>
+<app-components [arrData]="haha" (getindex)="getI($event)"></app-components>
+
+<h1 >{{idx}}</h1>
+<h1>{{index}}</h1> -->
+<!-- <p class="box"> 嘿 </p>
+<h1 class="box">嘿 </h1> -->
+
+<!-- set(a,value){
+  localStorage.setTtem(a,JSon.stringify(value))
+}
+get(){
+  localStorage.getTtem(a,JSon.parse(value))
+} -->
+<!-- <input type="text" [(ngModel)]="data" placeholder="内容不得为空" (keyup)="keyData($event)">  -->
+<!-- <button (click)="add()">添加数据</button> -->
+  <br/>
+  <app-a  (tolist)="Tolist($event)" [todata]="tolist"></app-a>
+  <app-b  (tolist2)="Tolist2($event)" [todata2]="tolist2"></app-b>
+  </div>
+  <!-- </div>(getindex)='getI($event)' -->
