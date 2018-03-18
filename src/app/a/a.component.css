@@ -61,6 +61,8 @@ li input{
 }
 li button{
     position: relative;
-  
-
+}
+#spanone1{
+    position: relative;
+    left: 5%
 }
