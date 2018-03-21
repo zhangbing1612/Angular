@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="data" id="inp">
+<button (click)="add()">添加</button>
+<button (click)="reset()">重置</button><br/>
+<b id="b1">正在进行</b><b id="b2">{{toarr.length}}</b><br>
+<ul>
+    <li *ngFor="let item of toarr; let i = index">
+        <input type="checkbox" (change)="change(i)">{{item}}------<button (click)="del(i)">不要了</button>
+    </li>
+</ul>
