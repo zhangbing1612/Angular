@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { stringify } from 'querystring';
 
 @Injectable()
 export class GetdataService {
@@ -16,22 +17,13 @@ export class GetdataService {
   // addData(num:number){
   //     this.list.push(num);
   // }
-  
-  set(a,value){
-    // var a=value;
-    localStorage.setItem(a,JSON.stringify(a))
-  
+  set(key,value){
+    localStorage.setItem(key,value);
   }
-  get(a){
-    var collection=localStorage.getItem("a");
-	if(collection!=null){
-    return JSON.parse(collection);
+  get(key){
+    return localStorage.getItem(key);
   }
-  else return [];
+  remove(key){
+    localStorage.removeItem(key);
   }
-  remove(a){
-    localStorage.removeItem(a);
-  }
-}
-  
-
+};

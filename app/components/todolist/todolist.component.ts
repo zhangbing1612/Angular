@@ -1,19 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-todolist',
   templateUrl: './todolist.component.html',
   styleUrls: ['./todolist.component.css']
-  
 })
 export class TodolistComponent implements OnInit {
 
-  constructor(public router:ActivatedRoute) { }
-num;
+  constructor() { }
+
   ngOnInit() {
-    this.num=this.router.snapshot.params.id;
-    console.log(this.router.snapshot.params)
   }
   tolist = [];
   comlist = [];

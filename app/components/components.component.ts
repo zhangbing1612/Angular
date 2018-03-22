@@ -13,20 +13,20 @@ export class ComponentsComponent implements OnInit {
   @Input() arrData:Array <any>;
  @Output() getindex=new EventEmitter();
  ngOnChanges(){
+   console.log(0);
  }
  num:number;
   ngOnInit() {
-  // this.getdata.addData(300);
-  // this.getdata.addData(500);
-  //  console.log(this.getdata.list);
+ 
   }
   ngOnCheck(){
-    console.log(2)
+  
   }
   ngondestroy(){
-    console.log(3)
+
   }
 fn(i){
   this.getindex.emit(i);
+  // this.getdata.getindex(i);
 }
 }

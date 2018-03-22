@@ -6,20 +6,21 @@ import {GetdataService} from './services/getdata.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  
  constructor(public getdata:GetdataService){
-
+  for(var i=0;i<localStorage.length;i++){
+    var getkey=localStorage.key(i);
+   // console.log(getkey)
+    console.log(this.getdata.get(getkey));
+    if(this.getdata.get(getkey)!==undefined&&getkey.slice(0,1)=='a'){
+      this.tolist.push(this.getdata.get(getkey));
+      console.log(this.tolist)
+    }
+  }
  }
-  index:number;
-  tolist;
-  tolist2;
+
  ngOnInit(){
-  if(localStorage.getItem){
-    this.tolist=this.getdata.get('todolist');
-    this.tolist2=this.getdata.get('todolist2');
-   }else{
-     this.tolist=[];
-   }
+  //  this.index=this.get.index;
  }
   // 插值表达式
   // title = 'hello world';
@@ -126,13 +127,19 @@ export class AppComponent {
   //   this.dataArr2.splice(i,1);
   // }
  
+ tolist=[];
+   tolist2=[];
   Tolist(e){
-    this.tolist2.push(e);    
+    this.tolist2.push(e);
+    this.getdata.set('do'+e,e);
+    this.getdata.remove('a'+e);
+    
   }
   Tolist2(e){
     this.tolist.push(e);
+   this.getdata.remove('do'+e);
+   this.getdata.set('a'+e,e)
   }
-
  
   // idx:number=-1;
   // haha=['1','2','3'];
