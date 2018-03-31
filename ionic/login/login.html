@@ -1,0 +1,31 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>淘宝登陆</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-img width="80" height="80" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522388601226&di=79f1171c7f77aa86030e96381ca97eb1&imgtype=0&src=http%3A%2F%2Fwww.sj520.cn%2FUploadFile%2F20160127233814105.jpg"></ion-img>
+  
+    <ion-item style="margin-top:10%">
+      <ion-label color="primary">用户名:</ion-label>
+      <ion-input placeholder="输入用户名" [(ngModel)]="username" >{{username}}</ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary" >密&nbsp;&nbsp;&nbsp;&nbsp;码:</ion-label>
+      <ion-input type="password" placeholder="请输入密码" [(ngModel)]="pwd">{{pwd}}</ion-input>
+  </ion-item>
+  <button id="button" (click)='Login()'>登陆</button>
+<p id="psw">忘记密码</p>
+</ion-list>
+</ion-content>

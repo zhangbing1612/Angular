@@ -1,0 +1,28 @@
+page-hello {
+    padding: 0;
+    margin:0;
+    }
+    #button{
+        position: relative;
+        left:25px;
+        width: 300px;
+        height: 40px;
+        border-radius:20px ;
+        top: 15px;
+        background-color: #ff7300
+    }
+    ion-img{
+        position: relative;
+        left: 126px;
+    }
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+        background-color: #ff7300
+    }
+    #psw{
+        position: relative;
+        color: orange;
+        left: 256px;
+        top: 22px;
+        font-size: 15px
+    }
+    
