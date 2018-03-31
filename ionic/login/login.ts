@@ -26,11 +26,11 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  username:string;
-  pwd:string;
+  usn;
+  pwd;
   headers = new Headers( {'Content-Type':'application/x-www-form-urlencoded'} );
   Login(){
-    this.http.post('http://datainfo.duapp.com/shopdata/getGoods.php',JSON.stringify({userID:this.username,password:this.pwd}), {headers:this.headers} ).
+    this.http.post('http://datainfo.duapp.com/shopdata/getGoods.php',JSON.stringify({userID:this.usn,password:this.pwd}), {headers:this.headers} ).
      subscribe( data=>{
          if(data.json()==0){
            this.presentAlert1();
@@ -47,7 +47,7 @@ export class LoginPage {
     let alert = this.alertCtrl.create({
       title: '用户名错误',
       subTitle: '您的用户名有误请确认后重新输入',
-      buttons: ['Dismiss']
+      buttons: ['返回']
     });
     alert.present();
   }
@@ -55,7 +55,7 @@ export class LoginPage {
     let alert = this.alertCtrl.create({
       title: '密码错误',
       subTitle: '您的密码有误请确认后重新输入',
-      buttons: ['Dismiss']
+      buttons: ['返回']
     });   
   }
 }
