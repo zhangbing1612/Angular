@@ -30,12 +30,14 @@ export class LoginPage {
   pwd;
   headers = new Headers( {'Content-Type':'application/x-www-form-urlencoded'} );
   Login(){
-    this.http.post('http://datainfo.duapp.com/shopdata/userinfo.php',JSON.stringify({userID:this.usn,password:this.pwd}), {headers:this.headers} ).
-     subscribe( data=>{
-         if(data.json()==0){
+    this.http.post('http://datainfo.duapp.com/shopdata/userinfo.php',JSON.stringify({userID:this.usn,password:this.pwd}), {headers:this.headers} )
+    .map(data=>{
+     data.json();;
+    }).subscribe( data=>{
+         if(data[0]==0){
            this.presentAlert1();
          }
-         if(data.json()==2){
+         if(data[0]==2){
           this.presentAlert2();
         }
         else{
