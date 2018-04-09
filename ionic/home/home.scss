@@ -1,0 +1,107 @@
+page-home {
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.sch{
+    left: 10px;
+}
+.slide1{
+    height: 30%;
+    width: 100%;
+    padding: 0
+}
+.grid1{
+    text-align: center;
+    padding: 0;
+    position: relative;
+    top: -24px
+}
+.slide2{
+    padding: 0;
+    height: 45%;
+}
+.slide2 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 25px
+}
+.icol img{
+    width: 25px;
+    height: 25px;
+}
+.icol p{
+    font-size:10px ;
+    margin-top: 11px;
+    font-weight: 600
+}
+.icol ion-col{
+    border: #ebebeb solid 1px;   
+    padding: 16px;
+    border-left:none 
+}
+[col-md-4]{
+    padding: 16px
+}
+.iro ion-col{
+    border-top:none
+}
+.iro img{
+    width: 25px;
+    height: 25px;
+}
+.iro p{
+    font-size:10px ;
+    margin-top: 11px;
+    font-weight: 600
+}
+.iro ion-col{
+    border: #ebebeb solid 1px;   
+    padding: 16px;
+    border-left:none 
+}
+.search{
+    background-color:#ffffff
+}
+.slider{
+    white-space: nowrap;
+    height: 50px;
+    width: 50px
+}
+#list{
+    position: relative;
+    top: 10px；
+}
+#list h2{
+    position: relative;
+    left: 40px;
+    top: -4px
+}
+#list img{
+    position: relative;
+    top: 22px
+}
+#hed a{
+    color: #aeaeae
+}
+.list2{
+    margin: -43px 0 32px;
+    height: 50px;
+}
+// .scroll1{
+//     margin: 0 
+
+// }
+.list-div{
+    margin-right: 50px
+}
+.list-div1{
+    margin-right:20px;
+    float: left; 
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+    color:yellow
+}
+// ion-content .scroll-content{
+//     margin-bottom:0 
+// }
