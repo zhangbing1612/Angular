@@ -1,0 +1,44 @@
+
+<ion-header class="inoheader1" >
+
+    <ion-navbar >
+      <ion-title>login</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content class="conent1">
+    <div class="til">
+      <img src="assets/imgs/ziya.png">
+      <p style="color:white">手机注册</p>
+    </div>
+  
+    <div class="content1">
+        <img src="assets/imgs/login-01.png">
+        <ion-item  class="ite">    
+            <ion-input type="text" placeholder="手机号" noline></ion-input>
+        </ion-item>
+        <img src="assets/imgs/lock.png">
+          <ion-item class="ite">
+            <ion-input type="password" placeholder="请输入验证码"></ion-input>
+            <button ion-button color='Theme'></button>
+        </ion-item>
+        <img src="assets/imgs/login-01.png">
+        <ion-item  class="ite">    
+            <ion-input type="text" placeholder="请确认您的用户名" noline></ion-input>
+        </ion-item>
+        <img src="assets/imgs/lock.png">
+          <ion-item class="ite">
+            <ion-input type="password" placeholder="请确认您的密码"></ion-input>
+        </ion-item>
+        <button ion-button class="login" (click)='go()'>登陆</button>
+        <button ion-button class="reg" (click)='goo()'>注册</button>
+        <ion-item id="ceb">
+          <ion-label no-line>我已阅读并同意《资芽网注册协议》</ion-label>
+          <ion-checkbox color="Theme" checked="true"></ion-checkbox>
+        </ion-item>
+        <p class="fg">忘记密码？</p>
+    </div>
+  </ion-content>
+  
