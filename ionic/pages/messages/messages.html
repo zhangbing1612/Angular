@@ -1,0 +1,45 @@
+
+<ion-header text-center>
+
+  <ion-navbar color='Theme'>
+    <ion-title>消息</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list class="message-list">
+    <!-- <ion-item-sliding *ngFor="let item of items;let i=index" (click)='gomsg(i)'>
+      <ion-item>
+      <ion-avatar >
+        <img src="assets/imgs/touxiang.jpg">
+      </ion-avatar>
+      <h2 id="thename">张先生{{item}}</h2>
+      <span>下午5：21</span>
+      <p>I've had a pretty </p>
+    </ion-item>
+      <ion-item-options>
+        <button ion-button  style="background-color:grey ">{{TOP}}</button>
+        <button ion-button (click)='read(i)' style="background-color:darkorange;">已读</button>
+        <button ion-button (click)='del(i)' style="background-color:red">删除</button>
+      </ion-item-options>
+    </ion-item-sliding> -->
+    <ion-item class="thename" (click)='gomsg2($event)'>
+      <ion-avatar >
+        <img src="assets/imgs/touxiang.jpg">
+      </ion-avatar>
+      <h2>李先生</h2>
+      <span class="time">下午5：21</span>
+      <p>I've had a pretty </p>
+    </ion-item>
+    <ion-item class="thename" (click)='gomsg2($event)' style="border-bottom:1px #eeeeee solid">
+      <ion-avatar>
+        <img src="assets/imgs/touxiang2.jpg">
+      </ion-avatar>
+      <h2 >孙先生</h2>
+      <span class="time">下午5：45</span>
+      <p>I've had a pretty </p>
+    </ion-item>
+  </ion-list>
+</ion-content>

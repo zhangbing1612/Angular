@@ -1,0 +1,45 @@
+
+<ion-header class="inoheader1" color='dark' text-center>
+
+  <ion-navbar color='dark'>
+    <ion-title>找回密码</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="conent1">
+  <div class="til">
+    <!-- <img src="assets/imgs/ziya.png"> -->
+    <h1 style="color:white">资芽</h1>
+  </div>
+
+  <div class="content1">
+      <img src="assets/imgs/login-01.png">
+      <ion-item  class="ite">    
+          <ion-input type="text" placeholder="手机号" noline></ion-input>
+      </ion-item>
+      <img src="assets/imgs/lock.png">
+        <ion-item class="ite">
+          <ion-input type="password" placeholder="请输入验证码"></ion-input>
+        </ion-item>
+
+        <button ion-button class="getpwd" color='Theme'>获取验证码</button>
+
+      <img src="assets/imgs/login-01.png">
+      <ion-item  class="ite">    
+          <ion-input type="text" placeholder="请输入密码" noline></ion-input>
+      </ion-item>
+      <img src="assets/imgs/lock.png">
+        <ion-item class="ite">
+          <ion-input type="password" placeholder="请再次输入密码"></ion-input>
+      </ion-item>
+      <button ion-button class="login" (click)='go()'>确认</button>
+      <ion-item id="ceb">
+
+        <ion-label class="lab">我已阅读并同意《资芽网注册协议》</ion-label>
+
+        <ion-checkbox color="Theme" checked="true"></ion-checkbox>
+      </ion-item>
+  </div>
+</ion-content>

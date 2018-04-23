@@ -1,0 +1,48 @@
+page-set {
+
+}
+.set-icon-back{
+    position: relative;
+    left: 10px;
+    top: 17px
+}
+.set-title{
+    position: relative;
+    left: 142px;
+    top: -8px
+}
+.set-list span{
+    position: relative;
+    left: 25px;
+}
+.set-toggle .input-wrapper{
+    position: relative;
+    left: 25px;
+}
+.toggle-md.toggle-checked .toggle-icon{
+    background-color: #7bfe47
+}
+.toggle-md.toggle-checked .toggle-inner{
+    background-color: white
+}
+.toggle-md .toggle-icon{
+    height: 150%;
+}
+.toggle-md .toggle-inner{
+    top: 0
+}
+.set-last{
+    border-bottom: 1px #eeeeee solid
+}
+.set-button{
+    position: relative;
+    left: 96px;
+    top: 29px;
+    width: 150px;
+    border-radius:17px ;
+    background-color: #febd47
+}
+.set-button span{
+    position: relative;
+    left: 0px;
+}

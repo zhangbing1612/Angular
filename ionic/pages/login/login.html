@@ -1,0 +1,31 @@
+
+<ion-header class="inoheader">
+
+  <ion-navbar >
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="conent1">
+  <div class="til">
+    <img src="../../assets/imgs/ziya.png">
+    <p style="color:white">全球不良资产超级服务平台</p>
+  </div>
+
+  <div class="content1">
+      <img src="../../assets/imgs/login-01.png">
+      <ion-item  class="ite"> 
+          
+          <ion-input type="text" placeholder="请输入您的用户名" noline [(ngModel)]="usn">{{usn}}</ion-input>
+      </ion-item>
+      <img src="../../assets/imgs/lock.png">
+        <ion-item class="ite">
+          <ion-input type="password" placeholder="请输入您的密码" [(ngModel)]="pwd">{{pwd}}</ion-input>
+      </ion-item>
+      <button ion-button class="login" (click)='login()'>登陆</button>
+      <button ion-button class="reg" (click)='reg()'>注册</button>
+      <p class="fg" (click)='gozhao()'>忘记密码？</p>
+  </div>
+</ion-content>

@@ -1,0 +1,133 @@
+page-home {
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.sch{
+    left: 10px;
+}
+.slide1{
+    height: 30%;
+    width: 100%;
+    padding: 0
+}
+.grid1{
+    text-align: center;
+    padding: 0;
+    position: relative;
+    top: -30px
+}
+.slide2{
+    padding: 0;
+    height: 45%;
+}
+.slide2 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 25px
+}
+.icol img{
+    width: 25px;
+    height: 25px;
+}
+.icol p{
+    font-size:10px ;
+    margin-top: 11px;
+    font-weight: 600
+}
+.icol ion-col{
+    border: #ebebeb solid 1px;   
+    padding: 16px;
+    border-left:none 
+}
+[col-md-4]{
+    padding: 16px
+}
+.iro ion-col{
+    border-top:none
+}
+.iro img{
+    width: 25px;
+    height: 25px;
+}
+.iro p{
+    font-size:10px ;
+    margin-top: 11px;
+    font-weight: 600
+}
+.iro ion-col{
+    border: #ebebeb solid 1px;   
+    padding: 16px;
+    border-left:none 
+}
+.search{
+    background-color:#ffffff
+}
+.slider{
+    white-space: nowrap;
+    height: 50px;
+    width: 50px
+}
+#list{
+    position: relative;
+    margin-top:18px
+}
+#list h2{
+    position: relative;
+    left: 40px;
+    top: -4px
+}
+#list img{
+    position: relative;
+    top: 22px
+}
+#hed{
+    border: bottom 1px; 
+}
+#hed a{
+    color: #aeaeae
+}
+.list2{
+    margin: -43px 0 32px;
+    height: 50px;
+    background-color: #f9f9f9
+}
+// .scroll1{
+//     margin: 0 
+
+// }
+.list-div{
+    margin-right: 30px
+}
+.list-div1{
+    margin-right:20px;
+    float: left; 
+}
+.menu{
+    position: relative;
+    left: -329px;
+}
+ .img1{
+    position: relative;
+    top: -3px
+}
+.search1{
+    position: relative;
+    right: -120px;
+    top: -5px
+}
+.toast-md .toast-wrapper{
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(57, 65, 58, 0.534)
+}
+.slide2 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom:31px;
+}
+.swiper-pagination-bullet-active{
+    background-color: yellow
+}
+// .home-content .scroll-content{
+//     background-color: #f9f9f9
+// }

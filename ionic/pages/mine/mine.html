@@ -1,0 +1,90 @@
+<!--
+  Generated template for the MinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header text-center>
+
+  <ion-navbar color='Theme'>
+    <ion-title>我的</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="mine-conent">
+  <div class="first">
+    <div class="mine">
+        <img src="assets/imgs/00.png" class="img2">
+    </div>
+    <button ion-button class="mine-button1" >编辑资料</button>
+    <span class="mine-span1">张扬</span>
+    <p class="mine-p1">北京市|海淀区</p>
+    <p class="mine-p2">北京资芽网络有限公司</p>
+  </div>
+  <ion-list class="second">
+    <ion-item>
+        <img src="assets/imgs/yabi.png" >
+        <span>芽币</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <img src="assets/imgs/mine-push.png" >
+        <span>我发布的</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item (click)='goCooperate()'>
+        <img src="assets/imgs/hezuo.png" >
+        <span>我合作的</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list class="third">
+      <ion-item>
+          <img src="assets/imgs/shoucang.png" >
+          <span>我的收藏</span>
+          <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+      </ion-item>
+      <ion-item>
+          <img src="assets/imgs/caogao.png" >
+          <span>我的草稿箱</span>
+          <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+      </ion-item>
+      <ion-item>
+          <img src="assets/imgs/shipin.png" >
+          <span>视频发布</span>
+          <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <img src="assets/imgs/wanshan.png" >
+        <span>完善信息</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <img src="assets/imgs/vip.png" >
+        <span>VIP等级</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <img src="assets/imgs/zhanghu.png" >
+        <span>账户安全</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <img src="assets/imgs/anquan.png" >
+        <span>账户安全</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <img src="assets/imgs/help.png" >
+        <span>帮助与反馈</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    <ion-item (click)='goSet()'>
+        <img src="assets/imgs/shezhi.png" >
+        <span>设置</span>
+        <ion-icon item-end name="arrow" style="color:#626262"></ion-icon>
+    </ion-item>
+    </ion-list>
+</ion-content>

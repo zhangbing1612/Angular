@@ -1,0 +1,73 @@
+page-login {
+
+}
+
+.til{
+    text-align: center
+}
+.conent1{
+    background-image: url(../../assets/imgs/bg.png)
+}
+.conent1 img{
+    width: 40%
+}
+.content1 input{
+    width: 150px;
+    position: relative;
+    left: 7px;
+}
+.ite{
+    width: 50%;
+    position: relative;
+    left: 100px;
+    background-color: transparent
+}
+.lock{
+    position: relative;
+    top: 91px;
+    left: 76px;
+    width: 50px
+}
+.content1 img{
+    position: relative;
+    width: 23px;
+    height: 30px;
+    left: 77px;
+    top: 48px;
+}
+.content1 input{
+    color: white
+}
+.login{
+    width: 207px;
+    position: relative;
+    left: 80px;
+    top:19px;
+    background-color: #fedb47;
+    color: black;
+    border-radius: 50px
+}
+.reg{
+    width: 207px;
+    position: relative;
+    left: 80px;
+    top:30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: #fedb47 solid 1px
+   
+}
+// .tabs-ios-Tabbg .tabbar{
+//     background-color: transparent;
+//     border-color: transparent;
+//     position: static;
+// }
+.inoheader {
+    position: static
+}
+.fg{
+    color: white;
+    position: relative;
+    top: 45px;
+    left: 155px;
+}
